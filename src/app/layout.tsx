@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Manrope } from "next/font/google";
+import { Quicksand, ZCOOL_KuaiLe } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
   subsets: ["latin"],
 });
 
-const dmSerif = DM_Serif_Display({
-  variable: "--font-dm-serif",
+const zcoolKuaiLe = ZCOOL_KuaiLe({
+  variable: "--font-zcool",
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${manrope.variable} ${dmSerif.variable} antialiased`}>
+      <body className={`${quicksand.variable} ${zcoolKuaiLe.variable} antialiased`}>
         {children}
       </body>
     </html>
